@@ -8,7 +8,7 @@ def main():
     papers_network.create_network()
 
     edgeWeights, papers_h_index = papers_network.get_network_edges_weights()
-    wordProbabilities = pr.powerIteration(edgeWeights, papers_h_index, rsp=rsp)
+    wordProbabilities = pr.powerIteration(edgeWeights, papers_h_index)
     v=9
 
 if __name__ == '__main__':

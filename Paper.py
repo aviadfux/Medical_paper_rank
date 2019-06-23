@@ -18,6 +18,7 @@ class Paper(object):
         except:
             self.pm_cited = None
         self.h_index = self.get_H_index() + 1
+        # self.h_index = 1
         # pm_cite - which papers cited by current paper
         self.pm_cite = []
         print("create paper with pmid" + pmid)
